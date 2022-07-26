@@ -109,9 +109,18 @@ will need to set it up with these steps:
 Check [CONTRIBUTING.md](https://github.com/chshersh/iris/blob/main/CONTRIBUTING.md)
 for contributing guidelines.
 
-To build the project and run the tests, use `cabal`:
+To build the project and run the tests, you can use `cabal`:
 
 ```shell
 cabal build all
 cabal test --enable-tests --test-show-details=direct
 ```
+
+or `stack`:
+
+```shell
+stack build
+stack test
+```
+
+Note that currently building the project with `stack` is possible against the latest GHC version (9.2.3) only.
